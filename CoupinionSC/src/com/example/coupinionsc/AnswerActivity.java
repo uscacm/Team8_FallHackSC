@@ -6,10 +6,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class AnswerActivity extends Activity 
 {	
+	UserManager user = new UserManager(); //creates a new user, later data will be passed in arguments
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -19,6 +22,9 @@ public class AnswerActivity extends Activity
 		Intent myIntent = getIntent();
 		//IMPORTANT: this is the user's answer that needs to be recorded to the database
 		char userChoice = myIntent.getExtras().getChar("userChoice"); //this is the answer to the daily question
+		
+		TextView textLevelDisplay = (TextView) this.findViewById(R.id.textPoints);
+		textLevelDisplay.setText("Level: " + user.getLevel());
 		
 		//initializes the buttons on the answer screen
 		Button buttonVisitUSC = (Button) this.findViewById(R.id.buttonVisitUSC);
@@ -44,10 +50,9 @@ public class AnswerActivity extends Activity
 		buttonViewCoupons.setOnClickListener(new View.OnClickListener() {			
 			@Override
 			public void onClick(View v) {
-				//if clicked, open the USC web site
-				Uri uri = Uri.parse("http://www.usc.edu");
-				Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-				startActivity(intent);				
+				//WORK IN PROGRESS		
+				//Intent intent = new Intent(AnswerActivity.this,  );
+				//startActivity(intent);				
 			}
 		});
 		
@@ -55,7 +60,7 @@ public class AnswerActivity extends Activity
 		buttonVisitCoup.setOnClickListener(new View.OnClickListener() {			
 			@Override
 			public void onClick(View v) {
-				//if clicked, open the USC web site
+				//if clicked, open the Coupinions web site
 				Uri uri = Uri.parse("http://www.coupinions.us");
 				Intent intent = new Intent(Intent.ACTION_VIEW, uri);
 				startActivity(intent);				

@@ -68,6 +68,7 @@ public final class R {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int dailyQuestion=0x7f050013;
+        public static final int dailypoll=0x7f050015;
         public static final int email=0x7f050002;
         public static final int epassword=0x7f050003;
         public static final int female=0x7f05000b;
@@ -79,6 +80,7 @@ public final class R {
         public static final int optionB=0x7f050010;
         public static final int optionC=0x7f050011;
         public static final int optionD=0x7f050012;
+        public static final int pollresults=0x7f050016;
         public static final int register=0x7f050008;
         public static final int signin=0x7f050005;
         public static final int signup=0x7f050006;

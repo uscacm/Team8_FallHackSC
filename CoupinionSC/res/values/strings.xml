@@ -22,5 +22,7 @@
     <string name="optionD">This is option D.</string>
     <string name="dailyQuestion">This is the daily question that will be updated every day :)</string>
     <string name="username">username placeholder</string>
+    <string name="dailypoll">The Daily Poll</string>
+    <string name="pollresults">Poll Results</string>
 
 </resources>
