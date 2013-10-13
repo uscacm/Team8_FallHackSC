@@ -12,6 +12,7 @@ import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
+import com.example.coupinions.R;
 
 public class SignIn extends Activity {
 	

@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import com.example.coupinions.R;
 
 public class QuestionActivity extends Activity {
 

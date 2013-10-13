@@ -14,11 +14,11 @@ import android.graphics.*;
 import android.os.Bundle;
 import android.widget.SeekBar;
 import android.widget.TextView;
-
 import com.androidplot.pie.PieChart;
 import com.androidplot.pie.PieRenderer;
 import com.androidplot.pie.Segment;
 import com.androidplot.pie.SegmentFormatter;
+import com.example.coupinions.R;
 
 public class AnswerActivity extends Activity 
 {	
