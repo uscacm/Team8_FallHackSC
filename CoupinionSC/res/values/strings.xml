@@ -4,5 +4,11 @@
     <string name="app_name">CoupinionSC</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="optionA">This is option A.</string>
+    <string name="optionB">This is option B.</string>
+    <string name="optionC">This is option C.</string>
+    <string name="optionD">This is option D.</string>
+    <string name="dailyQuestion">This is the daily question that will be updated every day :)</string>
+    <string name="username">username placeholder</string>
 
 </resources>
