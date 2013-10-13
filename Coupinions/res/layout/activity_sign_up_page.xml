@@ -20,6 +20,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
+                    android:paddingTop="60dp"
+        
         android:text="@string/register"
         android:textSize="20sp" />
 
@@ -30,6 +32,7 @@
         android:layout_below="@+id/signupmessage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        
         android:ems="10"
         android:hint="@string/email" />
 

@@ -48,6 +48,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
+            android:paddingTop="60dp"
+        
         android:text="@string/login"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
