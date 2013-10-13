@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.coupinionsc"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.1" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -14,13 +14,43 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.coupinionsc.QuestionActivity"
+            android:name="com.example.coupinionsc.SignIn"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.coupinionsc.SignUpPage"
+            android:label="@string/title_activity_sign_up_page"
+            android:parentActivityName="com.example.coupinionsc.SignIn" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.coupinionsc.SignIn" />
+        </activity>
+        <activity
+            android:name="com.example.coupinionsc.HackSCLogo"
+            android:label="@string/title_activity_hack_sclogo"
+            android:parentActivityName="com.example.coupinionsc.SignIn" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.coupinionsc.SignIn" />
+        </activity>
+        <activity
+            android:name="com.example.coupinionsc.QuestionActivity"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.coupinionsc.SignIn" />
+        </activity>
+        <activity
+            android:name="com.example.coupinionsc.AnswerActivity"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.coupinionsc.QuestionActivity" />
         </activity>
     </application>
 
