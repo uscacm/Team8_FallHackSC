@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Coupinions</string>
+    <string name="action_settings">Settings</string>
+    <string name="email">USC Email</string>
+    <string name="epassword">Password</string>
+    <string name="login">Sign In To Coupinions</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="title_activity_sign_in">Sign In</string>
+    <string name="register">Sign Up to Answer!</string>
+    <string name="title_activity_sign_up_page">Sign Up</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="fight_on">Hack On!</string>
+    <string name="title_activity_hack_sclogo">HackSCLogo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="optionA">This is option A.</string>
+    <string name="optionB">This is option B.</string>
+    <string name="optionC">This is option C.</string>
+    <string name="optionD">This is option D.</string>
+    <string name="dailyQuestion">This is the daily question that will be updated every day :)</string>
+    <string name="username">username placeholder</string>
+    <string name="dailypoll">The Daily Poll</string>
+    <string name="pollresults">Poll Results</string>
+
+</resources>

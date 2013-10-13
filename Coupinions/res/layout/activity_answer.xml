@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Points: "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+<!-- Problem: Cant get the title to separate from the graph -->  
+    <com.androidplot.pie.PieChart
+            android:id="@+id/mySimplePieChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" 			  
+            androidPlot.title="Results for the daily question"
+            android:textColor="@color/titletextcolor"
+            androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size"
+            androidPlot.graphWidget.gridLinePaint.color="@color/titlebackgroundcolor"/>
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"> 
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:text="Donut Size"
+                android:textColor="@color/titletextcolor"
+                android:id="@+id/donutSizeSeekLabel"/>
+        <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:max="90"
+                android:progress="50"
+                android:id="@+id/donutSizeSeekBar"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"         
+                android:layout_marginBottom="20dp"       
+                android:text="unknown"
+                android:textColor="@color/titletextcolor"
+                android:id="@+id/donutSizeTextView"/> 
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonVisitUSC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Visit usc.edu" />
+
+    <Button
+        android:id="@+id/buttonViewCoupons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="View your coupons" />
+
+    <Button
+        android:id="@+id/buttonVisitCoup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Visit Coupinions.us" />
+
+</LinearLayout>

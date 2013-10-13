@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".QuestionActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/dailyQuestion"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/answerButtonA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/answerButtonB"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="46dp"
+        android:text="@string/optionA"/>
+        
+      <Button
+        android:id="@+id/answerButtonB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/answerButtonC"
+        android:layout_below="@+id/answerButtonA"
+        android:layout_marginTop="19dp"
+        android:text="@string/optionB"/>
+    
+    <Button
+        android:id="@+id/answerButtonC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/answerButtonB"
+        android:layout_marginTop="17dp"
+        android:text= "@string/optionC"/>
+
+    <Button
+        android:id="@+id/answerButtonD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/answerButtonB"
+        android:layout_below="@+id/answerButtonC"
+        android:layout_marginTop="18dp"
+        android:text="@string/optionD"/>
+
+    
+</RelativeLayout>
